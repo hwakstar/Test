@@ -1,0 +1,23 @@
+@import '../../../mixins/mixins.scss';
+
+.sidebarButton {
+	@include flexDirJusAli(column, space-around, initial);
+	@include widthHeight(30px, 24px);
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	outline-width: 0px;
+}
+
+.sidebarButton:focus {
+	outline: none;
+	outline-width: 0px;
+}
+
+.sidebarButton__line {
+	@include widthHeight(30px, 2px);
+	background: #fefeff;
+}

@@ -1,0 +1,14 @@
+.heroImg {
+  width: 100%;
+  height: 100%;
+}
+
+.heroImg .heroImg__photo {
+  width: 100%;
+  height: 100%;
+  background: url("../../../images/HeroImg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+}
+/*# sourceMappingURL=HeroImg.css.map */

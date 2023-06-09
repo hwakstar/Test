@@ -1,0 +1,46 @@
+@import '../../../mixins/mixins.scss';
+
+.schedule {
+	@include widthHeight(100%, 100%);
+	@include flexDirJusAli(column, center, center);
+	.schedule__container {
+		@include widthHeight(100%, 100%);
+		max-width: 1000px;
+		margin: 8em 0;
+		.schedule__box {
+			@include widthHeight(252px, 229px);
+			background: rgba(255, 255, 255, 0.65);
+			@include flexDirJusAli(column, center, flex-start);
+			padding: 1em 2.5em;
+			@include noSelection;
+			.schedule__title {
+				color: #414f6b;
+				font-size: 32px;
+				font-family: 'Oswald', sans-serif;
+				font-weight: 600;
+				margin-right: auto;
+			}
+			.schedule__subContainer {
+				width: 100%;
+				display: flex;
+				margin: 0.5em 0;
+				color: #000000;
+				.schedule__dates {
+					width: 100%;
+				}
+				.schedule__location {
+					width: 100%;
+					margin-left: auto;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 361px) {
+	.schedule {
+		.schedule__container {
+			margin: 4em 0;
+		}
+	}
+}

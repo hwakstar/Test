@@ -1,0 +1,36 @@
+.sidebarButton {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: initial;
+      -ms-flex-align: initial;
+          align-items: initial;
+  width: 30px;
+  height: 24px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  outline-width: 0px;
+}
+
+.sidebarButton:focus {
+  outline: none;
+  outline-width: 0px;
+}
+
+.sidebarButton__line {
+  width: 30px;
+  height: 2px;
+  background: #fefeff;
+}
+/*# sourceMappingURL=SidebarButton.css.map */

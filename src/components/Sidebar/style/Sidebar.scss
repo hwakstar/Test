@@ -1,0 +1,47 @@
+@import '../../../mixins/mixins.scss';
+
+.sidebar {
+	@include widthHeight(70%, 100%);
+	max-width: 400px;
+	background: linear-gradient(
+		to bottom,
+		rgba(107, 162, 211, 1),
+		rgba(60, 73, 97, 0.85)
+	);
+	box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 200;
+	transform: translateX(100%);
+	transition: transform 0.3s ease-in-out;
+	font-family: 'Lato', sans-serif;
+	ul {
+		height: 100%;
+		list-style: none;
+		@include flexDirJusAli(column, flex-start, unset);
+		margin: 1.5rem 2rem;
+		li {
+			margin: 0.5rem 0;
+			a {
+				color: #fefeff;
+				text-decoration: none;
+				border-bottom: 1px solid #fefeff;
+				font-size: 1rem;
+				font-weight: 900;
+				font-style: italic;
+				&:hover,
+				&:active {
+					color: rgba(0, 0, 0, 0.5);
+					border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+					outline-width: 0;
+					outline: none;
+				}
+			}
+		}
+	}
+}
+
+.open {
+	transform: translateX(0%);
+}

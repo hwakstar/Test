@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+		'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+		'Droid Sans', 'Helvetica Neue', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	overflow: scroll;
+	-ms-overflow-style: none; // remove scroll bar Internet Explorer and Edge
+	scrollbar-width: none; // remove scroll firefox
+	&::-webkit-scrollbar {
+		display: none; // remove scroll Chrome, Safari, Opera
+	}
+}

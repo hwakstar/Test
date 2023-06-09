@@ -1,0 +1,66 @@
+@import '../../../mixins/mixins.scss';
+
+.subSection {
+	flex: 1;
+	@include widthHeight(100%, fit-content);
+	@include flexDirJusAli(row, center, center);
+	background: #ffffff;
+	padding: 1em 0px;
+	.subSection__container {
+		@include widthHeight(100%, fit-content);
+		@include flexDirJusAli(row, center, center);
+		padding: 0 2rem;
+		@include widthHeight(100%, 100%);
+		max-width: 1000px;
+		.subSection__logo {
+			display: flex;
+			img {
+				@include widthHeight(100%, fit-content);
+				margin-right: 0.5em;
+			}
+			.subSection__logoText {
+				font-family: 'Bebas Neue', cursive;
+				font-size: 22.84px;
+				line-height: 25.84px;
+				color: #4d4d4d;
+				span {
+					color: #414f6b;
+				}
+			}
+		}
+		.subSection__navigationItems {
+			margin-left: auto;
+			ul {
+				list-style: none;
+				@include zeroMarginPadding;
+				display: flex;
+				li {
+					padding: 0 1.5rem;
+					a {
+						color: #414f6b;
+						text-decoration: none;
+						border-bottom: 1px solid #414f6b;
+						font-size: 12px;
+						font-weight: 900;
+						font-style: italic;
+						&:hover,
+						&:active {
+							color: rgba(0, 0, 0, 0.5);
+							border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+							outline-width: 0;
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 361px) {
+	.subSection
+		.subSection__container
+		.subSection__navigationItems {
+		margin-left: 3em;
+	}
+}

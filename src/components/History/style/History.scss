@@ -1,0 +1,50 @@
+@import '../../../mixins/mixins.scss';
+
+.history {
+	@include widthHeight(100%, 100%);
+	background: url(../../../images/Bg01Img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	.history__container {
+		@include widthHeight(100%, 100%);
+		@include flexDirJusAli(column, flex-start, center);
+		@include noSelection;
+		.history__heading {
+			@include widthHeight(100%, fit-content);
+			max-width: 900px;
+			@include flexDirJusAli(row, initial, flex-end);
+			font-family: 'Oswald', sans-serif;
+			font-weight: 600;
+			.history__number {
+				font-size: 135.63px;
+				color: rgba(0, 0, 0, 0.5);
+				transform: translate(-0em, 0.25em);
+			}
+			.history__title {
+				color: #414f6b;
+				font-size: 32px;
+				transform: translate(-0.75em, -0.75em);
+			}
+		}
+		.history__description {
+			@include widthHeight(100%, 100%);
+			@include flexDirJusAli(column, flex-start, center);
+			.history__descriptionContainer {
+				@include widthHeight(80%, 100%);
+				max-width: 825px;
+				.history__descriptionText {
+					@include widthHeight(100%, fit-content);
+					@include flexDirJusAli(row, center, center);
+					color: #000000;
+					font-size: 16px;
+					line-height: 24px;
+					font-family: 'Lato', sans-serif;
+				}
+			}
+		}
+	}
+	.history__carousel {
+		position: relative;
+	}
+}

@@ -1,0 +1,71 @@
+@import '../../../mixins/mixins.scss';
+
+.header {
+	background-color: transparent;
+	font-family: 'Lato', sans-serif;
+	@include topLeftAbsolute(0, 0);
+	@include widthHeight(100%, 4em);
+	@include flexDirJusAli(row, center, center);
+	.header__navigation {
+		display: flex;
+		align-items: center;
+		@include widthHeight(100%, 100%);
+		max-width: 1000px;
+		padding: 0 1rem;
+		.header__toggleButton {
+			margin-left: auto;
+			margin-right: 1em;
+		}
+		.header__logo {
+			margin-left: 0.5rem;
+			a {
+				text-decoration: none;
+				img {
+					margin-right: 0.5em;
+				}
+			}
+		}
+		.header__navigationItems {
+			margin-left: auto;
+			ul {
+				list-style: none;
+				@include zeroMarginPadding;
+				display: flex;
+				li {
+					padding: 0 1.5rem;
+					a {
+						color: #fefeff;
+						text-decoration: none;
+						border-bottom: 1px solid #fefeff;
+						font-size: 12px;
+						font-weight: 900;
+						font-style: italic;
+						&:hover,
+						&:active {
+							color: rgba(0, 0, 0, 0.5);
+							border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+							outline-width: 0;
+							outline: none;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.header__navigationItems {
+		display: none;
+	}
+}
+
+@media (min-width: 769px) {
+	.header__toggleButton {
+		display: none;
+	}
+
+	.header__logo {
+		margin-left: 0;
+	}
+}

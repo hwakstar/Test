@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,QAAQ,CAAC;EACR,IAAI,EAAE,CAAC;ECFP,KAAK,EDGgB,IAAI;ECFzB,MAAM,EDEqB,KAAK;ECShC,OAAO,EAAE,IAAI;EACb,cAAc,EDTS,MAAM;ECU7B,eAAe,EDVgB,MAAM;ECWrC,WAAW,EDX4B,MAAM;CAC7C",
+    "sources": [
+        "Section.scss",
+        "../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "Section.css"
+}

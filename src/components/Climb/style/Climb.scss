@@ -1,0 +1,177 @@
+@import '../../../mixins/mixins.scss';
+
+.climb {
+	@include widthHeight(100%, 100%);
+	background: url(../../../images/climbBg01img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	.climb__container {
+		@include widthHeight(100%, fit-content);
+		@include flexDirJusAli(column, flex-start, center);
+		background: #ffffff;
+		@include noSelection;
+		.climb__heading {
+			margin: 0 2em;
+			@include widthHeight(100%, fit-content);
+			max-width: 900px;
+			@include flexDirJusAli(row, initial, flex-end);
+			font-family: 'Oswald', sans-serif;
+			.climb__number {
+				font-size: 135.63px;
+				font-weight: 600;
+				color: rgba(0, 0, 0, 0.5);
+			}
+			.climb__title {
+				color: #414f6b;
+				font-size: 32px;
+				font-weight: 600;
+				transform: translate(-0.75em, -1.75em);
+			}
+			.climb__description {
+				margin-left: 0.5em;
+				color: #000000;
+				font-size: 16px;
+				line-height: 24px;
+				transform: translate(-0.75em, -5em);
+				font-family: 'Lato', sans-serif;
+			}
+		}
+		.climb__navbar {
+			background: #414f6b;
+			@include widthHeight(100%, 4vh);
+			@include flexDirJusAli(row, center, center);
+			ul {
+				@include widthHeight(100%, 100%);
+				max-width: 1000px;
+				display: flex;
+				li {
+					padding: 0 1em;
+					list-style: none;
+					height: 100%;
+					@include flexDirJusAli(row, center, center);
+					color: #b0b4be;
+					&:nth-child(1) {
+						background: #b0b4be;
+						button {
+							color: #414f6b;
+							border-bottom: 1px solid #414f6b;
+							@include widthHeight(100%, fit-content);
+						}
+					}
+					button {
+						@include widthHeight(100%, 100%);
+						background: transparent;
+						outline-width: 0;
+						outline-color: transparent;
+						height: fit-content;
+						color: #b0b4be;
+						text-decoration: none;
+						border: none;
+						border-bottom: 1px solid #b0b4be;
+						@include noSelection;
+					}
+				}
+			}
+		}
+	}
+	.climb__scheduleContainer {
+		@include widthHeight(100%, fit-content);
+	}
+}
+
+.climbNewBg {
+	@include widthHeight(100%, 100%);
+	background: url(../../../images/climbBg02img.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: top center;
+	.climb__container {
+		@include widthHeight(100%, fit-content);
+		@include flexDirJusAli(column, flex-start, center);
+		background: #ffffff;
+		.climb__heading {
+			margin: 0 2em;
+			@include widthHeight(100%, fit-content);
+			max-width: 900px;
+			@include flexDirJusAli(row, initial, flex-end);
+			font-family: 'Oswald', sans-serif;
+			.climb__number {
+				font-size: 135.63px;
+				font-weight: 600;
+				color: rgba(0, 0, 0, 0.5);
+			}
+			.climb__title {
+				color: #414f6b;
+				font-size: 32px;
+				font-weight: 600;
+				transform: translate(-0.75em, -1.75em);
+			}
+			.climb__description {
+				margin-left: 0.5em;
+				color: #000000;
+				font-size: 16px;
+				line-height: 24px;
+				transform: translate(-0.75em, -5em);
+				font-family: 'Lato', sans-serif;
+			}
+		}
+		.climb__navbar {
+			background: #414f6b;
+			@include widthHeight(100%, 4vh);
+			@include flexDirJusAli(row, center, center);
+			ul {
+				@include widthHeight(100%, 100%);
+				max-width: 1000px;
+				display: flex;
+				li {
+					padding: 0 1em;
+					list-style: none;
+					height: 100%;
+					@include flexDirJusAli(row, center, center);
+					&:nth-child(2) {
+						background: #b0b4be;
+						button {
+							color: #414f6b;
+							border-bottom: 1px solid #414f6b;
+							@include widthHeight(100%, fit-content);
+						}
+					}
+					button {
+						@include widthHeight(100%, 100%);
+						background: transparent;
+						outline-width: 0;
+						outline-color: transparent;
+						height: fit-content;
+						color: #b0b4be;
+						text-decoration: none;
+						border: none;
+						border-bottom: 1px solid #b0b4be;
+						@include noSelection;
+					}
+				}
+			}
+		}
+	}
+	.climb__scheduleContainer {
+		@include widthHeight(100%, fit-content);
+	}
+}
+
+@media (max-width: 508px) {
+	.climb
+		.climb__container
+		.climb__heading
+		.climb__description {
+		transform: translate(-0.75em, -3em);
+	}
+}
+@media (max-width: 446px) {
+	.climb
+		.climb__container
+		.climb__heading
+		.climb__description {
+		transform: translate(-0.75em, -0em);
+		font-size: 12px;
+	}
+}

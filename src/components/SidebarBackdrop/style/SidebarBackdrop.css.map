@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;ECDhB,KAAK,EDEgB,IAAI;ECDzB,MAAM,EDCqB,IAAI;EAC/B,QAAQ,EAAE,KAAK;EACf,GAAG,EAAE,CAAC;EACN,IAAI,EAAE,CAAC;EACP,UAAU,EAAE,yBAAyB;EACrC,OAAO,EAAE,GAAG;CACZ",
+    "sources": [
+        "SidebarBackdrop.scss",
+        "../../../mixins/mixins.scss"
+    ],
+    "names": [],
+    "file": "SidebarBackdrop.css"
+}
